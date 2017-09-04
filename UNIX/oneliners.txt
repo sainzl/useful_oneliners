@@ -1,0 +1,3 @@
+# Format log archive with epoch time in the first column with human-readable date 
+# i.e. squid log files
+cat file.log | awk ' { print strftime("%c ",$1) $0; } '
