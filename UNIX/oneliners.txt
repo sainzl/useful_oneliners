@@ -5,3 +5,5 @@ $ cat file.log | awk ' { print strftime("%c ",$1) $0; } '
 # Search for a string in a directory
 $ find . -name *.log -exec grep "string" '{}' \; -print
  
+# Mount a directory through ssh
+$ sudo sshfs -o allow_other user@ip_addr:/  /mnt/
