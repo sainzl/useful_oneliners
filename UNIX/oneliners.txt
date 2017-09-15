@@ -7,3 +7,13 @@ $ find . -name *.log -exec grep "string" '{}' \; -print
  
 # Mount a directory through ssh
 $ sudo sshfs -o allow_other user@ip_addr:/  /mnt/
+
+# Mnemonic Netstat 
+$ netstat -putona
+
+# Check ALL netfilter rules
+$ sudo iptables -vL -t filter
+$ sudo iptables -vL -t nat
+$ sudo iptables -vL -t mangle
+$ sudo iptables -vL -t raw
+$ sudo iptables -vL -t security

@@ -1,0 +1,11 @@
+@ open Computer Management as Admin
+runas /user:admin "mmc compmgmt.msc"
+
+@ Other useful windows snap-ins
+lusrmgr.msc - Local users and groups
+perfmon.msc - Resource monitor
+devmgmt.msc - Device manager
+printmanagement.msc - Print management
+taskschd.msc - Task scheduler
+services.msc - Services
+taskmgr - Task manager
